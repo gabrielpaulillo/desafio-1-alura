@@ -18,10 +18,13 @@
             <path d="M74.3718 21.6971H66.6521L65.3397 26.3274H63.0238L68.4791 7.69995H72.5448L78 26.3274H75.6841L74.3718 21.6971ZM70.3575 8.65793L67.2439 19.6215H73.7799L70.6663 8.65793H70.3575Z" fill="white"/>
             </svg>
         </div>
-        <form action="" method="get">
-            <input type="search" name="header__searchbar" id="header__searchbar" placeholder="Busque por algo">
+        <form class="header__form" action="" method="get">
+            <input type="search" name="header__form__searchbar" id="header__form__searchbar" placeholder="Busque por algo">
         </form>
-        <img src="./assets/Photo.png" alt="Foto de perfil">
+        <div class="header__profile">
+            <img class="header__profile__img" src="./assets/Photo.png" alt="Foto de perfil">
+            <h4 class="header__profile__name">Harry</h4>
+        </div>
     </header> 
     <main>
         <section class="main__menu">
@@ -57,6 +60,7 @@
             </form>
             <h3>Personalização</h3>
             <form action="" method="post">
+                <input type="text" list="linguagem" name="nomelinguagem" id="nomelinguagem" value="Python" size="64">
                 <datalist id="language">
                     <option value="Python">Python</option>
                     <option value="C">C</option>
@@ -70,6 +74,7 @@
                     <option value="Scratch">Scratch</option>
                 </datalist>
                 <input type="color" name="color-picker" id="color-picker">
+                <input type="submit" value="Salvar projeto">
             </form>
         </section>
     </main>
