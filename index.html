@@ -26,18 +26,18 @@
             <h4 class="header__profile__name">Harry</h4>
         </div>
     </header> 
-    <main>
+    <main class="main">
         <section class="main__menu">
             <nav class="main__menu__nav">
-                <h3>Menu</h3>
-                <ul>
-                    <li>
+                <h3 class="main__menu__nav__title">Menu</h3>
+                <ul class="main__menu__nav__list">
+                    <li class="main__menu__nav__list__item">
                         <img src="./assets/code-image.png" alt="Ícone de código de programação.">
-                        <h4>Editor de Código</h4>
+                        <h4 class="main__menu__nav__list__item__subtitle">Editor de Código</h4>
                     </li>
-                    <li>
+                    <li class="main__menu__nav__list__item">
                         <img src="./assets/community-image.png" alt="Ícone da comunidade">
-                        <h4>Comunidade</h4>
+                        <h4 class="main__menu__nav__list__item__subtitle inactive-subtitle">Comunidade</h4>
                     </li>
                 </ul>
             </nav>
@@ -53,29 +53,35 @@
         </section>
 
         <section class="main__your-project">
-            <h3>Seu Projeto</h3>
-            <form action="" method="post">
-                <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto" required>
-                <textarea name="project-description" id="project-description" cols="30" rows="10" placeholder="Descrição do seu projeto"></textarea>
-            </form>
-            <h3>Personalização</h3>
-            <form action="" method="post">
-                <input type="text" list="linguagem" name="nomelinguagem" id="nomelinguagem" value="Python" size="64">
-                <datalist id="language">
-                    <option value="Python">Python</option>
-                    <option value="C">C</option>
-                    <option value="C++">C++</option>
-                    <option value="Java">Java</option>
-                    <option value="C#">C#</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Visual Basic">Visual Basic</option>
-                    <option value="SQL">SQL</option>
-                    <option value="Scratch">Scratch</option>
-                </datalist>
-                <input type="color" name="color-picker" id="color-picker">
-                <input type="submit" value="Salvar projeto">
-            </form>
+            <div class="main__your-project__info">
+                <h3 class="main__menu__nav__title">Seu Projeto</h3>
+                <form action="" method="post">
+                    <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto" required>
+                    <textarea name="project-description" id="project-description" placeholder="Descrição do seu projeto"></textarea>
+                </form>
+            </div>
+            <div class="main__your-project__customization">
+                <h3 class="main__menu__nav__title">Personalização</h3>
+                <form class="main__your-project__customization__form" action="" method="post">
+                    <input type="text" list="linguagem" name="nome-linguagem" id="nome-linguagem" value="Python" size="64">
+                    <datalist id="language">
+                        <option value="Python">Python</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="Java">Java</option>
+                        <option value="C#">C#</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="SQL">SQL</option>
+                        <option value="Scratch">Scratch</option>
+                    </datalist>
+                    <div id="div-color-picker">
+                        <input type="color" name="color-picker" id="color-picker">
+                    </div>
+                    <input class="project-save" type="submit" value="Salvar projeto">
+                </form>
+            </div>
         </section>
     </main>
     <footer></footer>

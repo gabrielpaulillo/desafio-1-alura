@@ -10,11 +10,13 @@ body {
     color: white;
 }
 
+/* Estilizando o cabeçalho */
+
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: space-between;
+    margin: 2rem;
 }
 
 .header__logo {
@@ -54,5 +56,149 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* Estilização do nav menu à esquerda */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem ;
+}
+
+.main__menu__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__menu__nav__title {
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.main__menu__nav__list__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main__menu__nav__list__item__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #FFF;
+}
+
+.inactive-subtitle {
+    color: #C4C4C4;
+}
+
+/* Estilização menu direito */
+.main__your-project {
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    width: 17rem;
+}
+
+.main__your-project__info {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-name {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #FFFFFF16;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #C4C4C4;
+}
+
+#project-description {
+    width: 100%;
+    height: 5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #FFFFFF16;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 0.875rem;
+    padding-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #C4C4C4;
+}
+
+/* Estilização da Personalização */
+.main__your-project__customization {
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    width: 17rem;
+}
+
+.main__your-project__customization__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#nome-linguagem {
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #FFFFFF16;
+    text-align: left;
+    padding-left: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #C4C4C4;
+}
+
+#div-color-picker {
+    width: 100%;
+    height: 3.5rem;
+    border: 2px solid #ffffff;
+    border-radius: .5rem;
+}
+
+#color-picker {
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #051D3B;
+    padding: .5rem;
+}
+
+.project-save {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #5081FB;
+    border: none;
+    color: #051D3B;
+    text-align: center;
+    padding-left: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
